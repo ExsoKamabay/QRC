@@ -1,0 +1,128 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG72wNJHMw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+body{
+    background-color: rgb(24, 23, 23);
+    transition: 1s ease all;
+    animation: bdm 1s ease 1s infinite;
+}
+div.val{
+    margin-top: 50px;
+    margin-left: 110px;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    color: magenta;
+    text-shadow: 2px 2px 2px rgb(75, 240, 10);
+}
+h2{
+    font-size: 50px;
+    color: rgb(194, 0, 194);
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 3px 3px 5px cyan;
+    transition: 1.5s ease all;
+    animation: xname 2s ease infinite;
+    font-family: 'Kaushan Script', cursive;
+}
+@keyframes xname{
+    30%{
+        transform: skew(25deg);
+        text-shadow: -3px -3px 5px cyan;
+    }
+    60%{
+        text-shadow: -3px 3px 5px cyan;
+    }
+    90{
+        text-shadow: 3px -3px 5px cyan;
+    }
+}
+ul li {
+    color: magenta;
+}
+input#button :hover {
+    border-color: chartreuse;
+    background-color: darkmagenta;
+    color: cyan;
+}
+@keyframes bdm{
+    30%{
+        background-color: mediumslateblue;
+    }
+    60%{
+        background-color: mediumvioletred;
+    }
+    90%{
+        background-color: royalblue;
+    }
+}
+div.x{
+    width: 850px;
+    height: 700px;
+    margin: 10px auto;
+    flex-direction: column;
+    background-color: rgb(26, 27, 26);
+    display: flex;
+    padding: 1px;
+    border-radius: 15px;
+}
+#container{
+    width: 600px;
+    background-image: url(https://raw.githubusercontent.com/ExsoKamabay/QR_code/master/example/example.gif);
+    height: 400px;
+    border: 7px solid rgb(74, 29, 179);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+#value,#output,#btnGif{
+    transition: 1s ease all;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgba(56, 63, 53, 0.705);
+    border: 2px solid aqua;
+    text-align: center;
+}
+#btnGif{
+    margin: 3px auto;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(116, 28, 179);
+}
+#output{
+    margin-top: 10px;
+}
+#value{
+    height: 150px;
+}
+div.x input#bg-gif:hover{
+    border: 3px solid rgb(110, 2, 235);
+    background-color: rgb(142, 236, 173);
+}
+div.x input#value:hover{
+    border: 3px solid rgb(21, 255, 80);
+    background-color: rgb(197, 107, 185);
+}
+div.x input#output:hover{
+    border: 3px solid rgb(21, 255, 80);
+    background-color: rgb(197, 107, 185);
+}
+div.x #btnGif:hover{
+    background-color: lightseagreen;
+    border: 4px double magenta;
+    border-radius: 30px;
+}

@@ -1,0 +1,5 @@
+string-color==1.2.1
+art==4.8
+pywebview==3.3.4
+url64==0.0.2
+segno==1.3.1

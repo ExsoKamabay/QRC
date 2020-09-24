@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>QR Code</title>
+</head>
+<body>
+    <div class="x">
+        <div id="container"><h2 id="name">KAMABAY</h2></div>
+        <input type="text" id="value" placeholder="masukan data disini bossku!!">
+        <input type="text" id="output" placeholder="nama output">
+        <input type="button" value="MEMBUAT" id="btnGif">
+    </div>
+    <script>
+        let button = document.getElementById("btnGif");
+        button.addEventListener("click",function(e){
+            var value = document.getElementById("value").value;
+            var output = document.getElementById("output").value;
+            pywebview.api.window_qrGif(value,output).then(function(dt){
+                let container = document.getElementById("container");
+                let nameAuth = document.getElementById("name");
+                nameAuth.style.color = "rgb(255, 0, 0, 0);";
+                // container.innerHTML = JSON.stringify(dt);
+                container.innerHTML = "<div class='val'>Data : "+dt.val+"<br>Version : "+dt.vrsn+"<br>Scale : "+dt.scale+"<br>Border : "+dt.border+"<br>Color : "+dt.color+"<br>Bg-color : "+dt.bgClr+"<br>Bg-gif : "+dt.bgGif+"<br>Output : "+dt.output+".gif</div>"
+            });
+        });
+    </script>
+</body>
+</html>
