@@ -12,7 +12,8 @@ $ git clone https://github.com/ExsoKamabay/QRC.git<br>
 $ cd QRC/myQRC<br>
 $ pip3 install -r  <a href="https://raw.githubusercontent.com/ExsoKamabay/QRC/d72700c7801b7542891b304c5b888ab18f8d2bc1/myQRC/src/requirements.txt">src/requirements.txt</a><br>
 run console mode : $ python3 qrc_console.py<br>
-run window mode  : $ python3 qrc_window.py<br>
+run window mode  : $ python3 qrc_window.py<br><br>
+<a href="https://github.com/ExsoKamabay/QRC/tree/master/qr-example"><strong>sample qr code generated!!</strong></a>
 <h1> display in the terminal </h1>
 <img src="https://raw.githubusercontent.com/ExsoKamabay/QRC/master/screen_shoot/screen_console.png">
 <h1> display in the window </h1>
